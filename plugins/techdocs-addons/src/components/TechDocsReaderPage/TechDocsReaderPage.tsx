@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-import { CompoundEntityRef } from '@backstage/catalog-model';
 import { Page } from '@backstage/core-components';
 // todo(backstage/techdocs-core): Export these from @backstage/plugin-techdocs
 import {
@@ -23,6 +22,7 @@ import {
   TechDocsStateIndicator as TechDocReaderPageIndicator,
 } from '@backstage/plugin-techdocs';
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
 import {
   TechDocsMetadataProvider,
@@ -34,16 +34,12 @@ import { TechDocsReaderPageHeader } from '../TechDocsReaderPageHeader';
 import { TechDocsReaderPageSubheader } from '../TechDocsReaderPageSubheader';
 
 /**
- * @public
- */
-export type TechDocsReaderPageProps = { entityName: CompoundEntityRef };
-
-/**
  * An addon-aware implementation of the TechDocsReaderPage.
  * @public
  */
-export const TechDocsReaderPage = (props: TechDocsReaderPageProps) => {
-  const { entityName } = props;
+export const AddonAwareReaderPage = () => {
+  const { namespace, kind, name } = useParams();
+  const entityName = { namespace, kind, name };
   const Component = withTechDocsReaderProvider(() => {
     return (
       <TechDocsMetadataProvider entityName={entityName}>

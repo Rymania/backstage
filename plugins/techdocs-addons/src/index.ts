@@ -28,8 +28,10 @@ export {
   useShadowRoot,
   useShadowRootElements,
 } from './context';
+export { 
+  TechDocsAddonLocations,
+} from './types';
 export type {
   TechDocsAddonAsyncMetadata,
-  TechDocsAddonLocations,
   TechDocsAddonOptions,
 } from './types';

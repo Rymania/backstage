@@ -14,4 +14,20 @@
  * limitations under the License.
  */
 
-export * from './TechDocsReaderPage';
+import { createRoutableExtension } from '@backstage/core-plugin-api';
+import { techdocsPlugin } from '@backstage/plugin-techdocs';
+
+/**
+ * An addon-aware implementation of the TechDocsReaderPage.
+ * @public
+ */
+export const TechDocsReaderPage = techdocsPlugin.provide(
+  createRoutableExtension({
+    name: 'TechDocsAddonAwareReaderPage',
+    component: () =>
+      import('./TechDocsReaderPage').then(
+        m => m.AddonAwareReaderPage,
+      ),
+    mountPoint: techdocsPlugin.routes.docRoot,
+  }),
+);

@@ -61,10 +61,10 @@ export const TechDocsReaderPageContent = () => {
     '[data-md-component="container"]',
   );
   const primarySidebarElement = ref.current?.shadowRoot?.querySelector(
-    '[data-md-component="navigation"]',
+    'div[data-md-component="sidebar"][data-md-type="navigation"], div[data-md-component="navigation"]',
   );
   const secondarySidebarElement = ref.current?.shadowRoot?.querySelector(
-    '[data-md-component="toc"]',
+    'div[data-md-component="sidebar"][data-md-type="toc"], div[data-md-component="toc"]',
   );
 
   const primarySidebarAddonLocation = document.createElement('div');
