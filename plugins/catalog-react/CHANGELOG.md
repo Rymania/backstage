@@ -1,5 +1,13 @@
 # @backstage/plugin-catalog-react
 
+## 1.0.1-next.0
+
+### Patch Changes
+
+- a496cee4d1: Add support for string refs to the `EntityRefLinks` component
+- Updated dependencies
+  - @backstage/core-components@0.9.3-next.0
+
 ## 1.0.0
 
 ### Major Changes

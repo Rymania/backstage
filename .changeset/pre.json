@@ -139,5 +139,22 @@
     "@backstage/plugin-user-settings": "0.4.2",
     "@backstage/plugin-xcmetrics": "0.2.23"
   },
-  "changesets": []
+  "changesets": [
+    "eleven-pens-collect",
+    "empty-pens-invent",
+    "fair-lamps-leave",
+    "fast-cheetahs-grow",
+    "happy-mugs-camp",
+    "khaki-pears-march",
+    "large-coins-arrive",
+    "light-drinks-rule",
+    "ninety-fishes-vanish",
+    "purple-boats-punch",
+    "red-snakes-float",
+    "silver-pots-call",
+    "techdocs-head-shoulders-knees-toes",
+    "tidy-emus-stare",
+    "wicked-beds-return",
+    "wicked-feet-clap"
+  ]
 }

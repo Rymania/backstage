@@ -1,5 +1,11 @@
 # @backstage/backend-common
 
+## 0.13.2-next.0
+
+### Patch Changes
+
+- f9f512559b: Updated the visibility of database connection fields in config to be secret
+
 ## 0.13.1
 
 ### Patch Changes

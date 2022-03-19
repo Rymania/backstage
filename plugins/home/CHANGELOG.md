@@ -1,5 +1,14 @@
 # @backstage/plugin-home
 
+## 0.4.20-next.0
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-search@0.7.5-next.0
+  - @backstage/plugin-catalog-react@1.0.1-next.0
+  - @backstage/core-components@0.9.3-next.0
+
 ## 0.4.19
 
 ### Patch Changes

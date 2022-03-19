@@ -1,5 +1,17 @@
 # @backstage/plugin-catalog-backend
 
+## 1.0.1-next.0
+
+### Patch Changes
+
+- 9fe24b0fc8: Adjust the error messages when entities fail validation, to clearly state what entity that failed it
+- ffec894ed0: add gitlab to AnnotateScmSlugEntityProcessor
+- Updated dependencies
+  - @backstage/plugin-search-common@0.3.3-next.0
+  - @backstage/backend-common@0.13.2-next.0
+  - @backstage/plugin-permission-node@0.5.6-next.0
+  - @backstage/plugin-catalog-common@1.0.1-next.0
+
 ## 1.0.0
 
 ### Major Changes

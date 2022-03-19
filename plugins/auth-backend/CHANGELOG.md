@@ -1,5 +1,18 @@
 # @backstage/plugin-auth-backend
 
+## 0.13.0-next.0
+
+### Minor Changes
+
+- 15d3a3c39a: **BREAKING**: All sign-in resolvers must now return a `token` in their sign-in result. Returning an `id` is no longer supported.
+
+### Patch Changes
+
+- 6ee04078e1: **DEPRECATION**: The `tokenIssuer` option for `OAuthAdapter` is no longer needed and has been deprecated.
+- Updated dependencies
+  - @backstage/plugin-auth-node@0.2.0-next.0
+  - @backstage/backend-common@0.13.2-next.0
+
 ## 0.12.2
 
 ### Patch Changes
